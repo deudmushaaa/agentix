@@ -1,0 +1,107 @@
+.footer {
+  padding: 80px 24px 40px;
+  background: var(--background);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.brandInfo {
+  max-width: 300px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--secondary-text);
+  line-height: 1.6;
+}
+
+.linksGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.groupTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 8px;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--secondary-text);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--foreground);
+}
+
+.contactItem {
+  font-size: 14px;
+  color: var(--secondary-text);
+}
+
+.contactItem strong {
+  color: var(--foreground);
+}
+
+.address {
+  font-size: 14px;
+  color: var(--secondary-text);
+  max-width: 300px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.bottomBar {
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+@media (max-width: 768px) {
+  .bottomBar {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
